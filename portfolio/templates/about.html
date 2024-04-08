@@ -1,0 +1,273 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+          <div class="container">
+              <div class="banner_content text-center">
+                  <h2>About Me</h2>
+                  <div class="page_link">
+                      <a href="{% url 'home' %}">Home</a>
+                      <a href="{% url 'about' %}">About</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================ End Banner Area =================-->
+
+
+  <!--================ Start About Us Area =================-->
+	<!-- About Section -->
+<section id="about" class="py-5 container-fluid">
+  <div class = "container" >
+    <div class="row align-items-center mx-auto" >
+      <div class="col-lg-6 order-lg-2" >
+        <img src="{% static 'img/profile.jpeg' %}" alt="About Me" class="img-fluid rounded-circle mb-2" id="image">
+      </div>
+
+      <div class="col-lg-6 order-lg-1">
+          <div class="main_title about-content align-items-center margin-auto">
+            <p class="top_text">About me <span></span></p>
+            <h2>
+              Web Developer <br> And Instructor
+    
+            </h2>
+            <p>
+              I'm a Fullstack Web Developer and Instructor with a passion for crafting beautiful, interacting and user-friendly websites. With more than 3 years of experience, I specialize in Frontend and Backend Development using HTML, CSS, JavaScript, jquery, python, Django, Bootstrap, SQL, Github, Wordpress etc.</p>
+              <p>My goal is to create elegant and responsive web applications that leave a lasting impression on users.
+            </p>
+            <a class="primary_btn" href="{% static 'godstime-cv.pdf' %}"><span>Download CV</span></a>
+        </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<h2 class="display-5" style="text-align: center; font-weight: 500;">My Services </h2>
+    <!--================ End About Us Area =================-->
+
+  <!--================ End About Us Area =================-->
+
+
+<!-- About Section-Frontend -->
+<section id="about" class="py-5 container-fluid">
+  <div class="container">
+    <div class="row align-items-center mx-auto" >
+      <div class="col-lg-6 order-lg-2" >
+        <img src="{% static 'img/frontend1.jpg' %}" alt="About Me" class="img-fluid mb-2" id="image" style="width: 90%; border-radius: 7px;">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+          <div class="main_title about-content align-items-center margin-auto">
+            <h2>
+              Frontend Development
+            </h2>
+            <p class="lead">I'm a passionate frontend developer with a keen eye for design and a love for crafting exceptional user experiences. With a solid foundation in HTML, CSS, JavaScript and Wordpress I bring websites to life and turn ideas into reality.</p>
+          <p>My journey in web development began with a curiosity to understand how websites work. Over the years, I've honed my skills in creating responsive and interactive web applications, constantly staying updated with the latest frontend technologies and trends.</p>
+          <p>Whether it's building pixel-perfect UIs, optimizing website performance, or solving complex frontend challenges, I thrive on pushing the boundaries of what's possible on the web. I believe that great design coupled with clean and efficient code is the key to delivering exceptional digital experiences.</p>
+            <a class="primary_btn" href="{% url 'portfolio' %}"><span>View Portfolio</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- About Section-Backend -->
+<section id="about" class="py-5 container-fluid">
+  <div class="container">
+    <div class="row align-items-center mx-auto" >
+      <div class="col-lg-6 order-lg-2" >
+        <img src="{% static 'img/backend1.jpg' %}" alt="About Me" class="img-fluid mb-2" id="image" style="width: 90%; border-radius: 7px;">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+          <div class="main_title about-content align-items-center margin-auto">
+            <h2>
+              Backend Development
+            </h2>
+            <p class="lead">I'm a dedicated backend developer with a passion for building scalable and efficient web applications. With expertise in programming languages like Python, JavaScript, SQL etc. I specialize in developing robust server-side solutions that power the digital world.</p>
+            <p>My journey in backend development started with a fascination for understanding how data flows and systems interact behind the scenes. Over the years, I've honed my skills in designing database schemas, writing efficient APIs, and optimizing application performance.</p>
+            <p>From architecting complex systems to troubleshooting server-side issues, I thrive on solving backend challenges and ensuring that applications run smoothly and reliably. I'm committed to writing clean, maintainable code and following best practices to deliver high-quality software.</p>
+
+            <a class="primary_btn" href="{% url 'portfolio' %}"><span>View Portfolio</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section-Web-Instructor -->
+<section id="about" class="py-5 container-fluid">
+  <div class="container">
+    <div class="row align-items-center mx-auto" >
+      <div class="col-lg-6 order-lg-2" >
+        <img src="{% static 'img/instructor1.jpg' %}" alt="About Me" class="img-fluid mb-2" id="image" style="width: 90%; border-radius: 7px;">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+          <div class="main_title about-content align-items-center margin-auto">
+            <h2>
+            Web Intructor
+            </h2>
+            <p class="lead">I'm a passionate web instructor with a mission to empower others through technology education. With years of experience in web development and teaching, I strive to make complex concepts accessible and enjoyable to learners of all levels.</p>
+            <p>My journey in education began with a desire to share my knowledge and help others succeed in the digital world. As a web instructor, I've had the privilege of guiding countless students on their learning journey, from beginners taking their first steps in coding to seasoned professionals looking to expand their skill set.</p>
+            <p>My teaching philosophy centers around hands-on, practical learning, where students not only understand the theory but also gain real-world experience through projects and exercises. I believe in fostering a supportive and inclusive learning environment where everyone feels empowered to ask questions, experiment, and grow.</p>
+            <p>Whether it's teaching the fundamentals of HTML, CSS or diving deep into advanced topics like JavaScript, Python, backend development, Frontend Developer, Wordpress, SQL, Java, C, Qbasic etc. I'm committed to providing engaging, up-to-date, and relevant content that equips students with the skills they need to succeed in the ever-evolving tech industry.</p>
+            
+            <a class="primary_btn" href="{% url 'portfolio' %}"><span>View Courses</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!--================ Start Testimonial Area =================-->
+	<section class="testimonial_area pb-xl-300px">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">`
+					<div class="main_title">
+						<p class="top_text">Our Tesitmonial <span></span></p>
+						<h2>Honourable Client Says <br>
+							About Me </h2>
+					</div>
+				</div>
+      </div>
+
+      <div class="owl-carousel owl-theme testimonial-slider ">
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="testi-right">
+                <h4>Roser Henrique</h4>
+                <p><small>Project Manager, Apple</small></p>
+
+                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                <ul class="star_rating mt-4">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="testi-right">
+                <h4>Roser Henrique</h4>
+                <p><small>Project Manager, Apple</small></p>
+
+                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                <ul class="star_rating mt-3">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="testi-right">
+                <h4>Roser Henrique</h4>
+                <p><small>Project Manager, Apple</small></p>
+
+                <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                <ul class="star_rating mt-3">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<!--================ End Testimonial Area =================-->
+
+
+  <!--================ Start Brands Area =================-->
+	<section class="brands-area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="owl-carousel brand-carousel">
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo1.png' %}" alt="">
+							</div>
+						</div>
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo2.png' %}" alt="">
+							</div>
+						</div>
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo3.png' %}" alt="">
+							</div>
+						</div>
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo4.png' %}" alt="">
+							</div>
+						</div>
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo5.png' %}" alt="">
+							</div>
+						</div>
+						<!-- single-brand -->
+						<div class="single-brand-item d-table">
+							<div class="d-table-cell">
+								<img src="{% static 'img/brands/logo3.png' %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brands Area =================-->
+{% endblock %}

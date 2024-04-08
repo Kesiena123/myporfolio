@@ -1,0 +1,515 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--================ Start Home Banner Area =================-->
+    <!----------
+    <section class="home_banner_area">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row align-items-center justify-content-between flex-column flex-md-row">
+            <div class="col col-lg-6">
+              <div class="banner_content">
+                <h3>Hey There !</h3>
+                <h2 class="text-uppercase display-3">I Am Biaka Godstime Kesiena</h2>
+                <h5 class="text-uppercase display-5">Web Developer</h5>
+                <div class="social_icons my-5">
+                  <a href="https://x.com/GBiaka45035/" target="_blank"><i class="ti-twitter"></i></a>
+                  <a href="https://join.skype.com/" target="_blank"><i class="ti-skype"></i></a>
+                  <a href="https://www.facebook.com/godstime-kesiena/" target="_blank"><i class="ti-facebook"></i></a>
+                  <a href="https://github.com/Kesiena123" target="_blank"><i class="ti-github"></i></a>
+                  <a href="https://www.linkedin.com/in/godstime-biaka/" target="_blank"><i class="ti-linkedin"></i></a>
+                  <a href="https://www.youtube.com/website" target="_blank"><i class="ti-youtube"></i></a>
+                </div>
+                <a class="primary_btn" href="https://github.com/Kesiena123"><span>See My Work</span></a>
+              </div>
+            </div>
+            <div class=" col col-lg-4 flex-column flex-md-row">
+              <div class="home_right_img">
+                <img class="img-fluid auto" style = "width: auto; height: auto;" src = "{% static 'img/banner/home-right.png' %}" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section  ---->
+    <!--================ End Home Banner Area =================-->
+    <!--- DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <!--- link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <Custom CSS -->
+  <style>
+    /* Customize styles here */
+    /* About Section styles */
+#about {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.about-content {
+  padding-right: 50px; /* Adjust spacing */
+}
+
+.about-content h2 {
+  font-family: 'Roboto', sans-serif; /* Google Font */
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-content a {
+  margin-top: 20px; /* Adjust spacing */
+  background-color: #6c5ce7;
+  border-color: #6c5ce7;
+  transition: background-color 0.3s ease;
+}
+
+.about-content a:hover {
+  background-color: #5740b3;
+}
+
+.about-content a.btn-primary {
+  font-weight: bold;
+}
+
+
+    /* Hero Section styles */
+    #hero {
+      background-image:linear-gradient(rgba(70, 93, 187, 0.3),rgba(65, 89, 189, 0.3)), url('{% static "img/home3.jpg" %}');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    #hero h1{
+      font-weight: 500;
+    }
+
+    #image{
+      background-color: #5740b3;
+    }
+
+    /* About Section styles */
+    #about {
+      background-color: #f8f9fa;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* Portfolio Section styles */
+    #portfolio {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .card {
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section styles */
+    #contact {
+      background-color: #f8f9fa;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .social_icons a {
+      width: 10%;
+      background: white;
+      index: 3;
+    }
+  </style>
+</head>
+
+
+  
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container text-center mt-5">
+      <h1 class="display-4 text-bold">Welcome to My Portfolio</h1>
+      <p class="text-lead">I'm a passionate <strong>Fullstack Web Developer</strong> specializing in <strong>Frontend and Backend Development</strong>.</p>
+      <a href="#portfolio" class="btn btn-primary btn-lg">View Portfolio</a>
+    </div>
+  </section>
+
+    <!--================ Start About Us Area =================-->
+    
+
+    <!-- About Section -->
+<section id="about" class="py-5 container-fluid">
+  <div class="container">
+    <div class="row align-items-center mx-auto" >
+      <div class="col-lg-6 order-lg-2">
+        <img src="{% static 'img/profile.jpeg' %}" alt="About Me" class="img-fluid rounded-circle mb-2" id="image">
+      </div>
+
+      <div class="col-lg-6 order-lg-1">
+        <div class="about-content">
+        <h2 class="text-light">Hey There !</h3>
+        <h2 class="text-uppercase">I Am Biaka Godstime Kesiena</h2>
+      </div>
+          <div class="main_title about-content align-items-center margin-auto">
+            <p class="top_text">About me <span></span></p>
+            <h2>
+              Web Developer <br> And Instructor
+    
+            </h2>
+            <p>
+              I'm a Fullstack Web Developer and Instructor with a passion for crafting beautiful, interacting and user-friendly websites. With more than 3 years of experience, I specialize in Frontend and Backend Development using HTML, CSS, JavaScript, jquery, python, Django, Bootstrap, SQL, Github, Wordpress etc.</p>
+              <p>My goal is to create elegant and responsive web applications that leave a lasting impression on users.
+            </p>
+            <div class="social_icons my-2 ">
+              <a href="https://x.com/GBiaka45035/" target="_blank"><i class="ti-twitter"></i></a>
+              <a href="https://join.skype.com/" target="_blank"><i class="ti-skype"></i></a>
+              <a href="https://www.facebook.com/godstime-kesiena/" target="_blank"><i class="ti-facebook"></i></a>
+              <a href="https://github.com/Kesiena123" target="_blank"><i class="ti-github"></i></a>
+              <a href="https://www.linkedin.com/in/godstime-biaka/" target="_blank"><i class="ti-linkedin"></i></a>
+              <a href="https://www.youtube.com/website" target="_blank"><i class="ti-youtube"></i></a>
+            </div>
+            <a class="primary_btn" href="{% static 'godstime-cv.pdf' %}"><span>Download CV</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--================ End About Us Area =================-->
+
+
+  <!--================ Start Statistics Area =================-->
+  <section class="statistics_area py-5 container-fluid mt-5">
+    <div class="container">
+      <div class="row justify-content-lg-start justify-content-center">
+        <div class="col-lg-2 col-md-3">
+          <div class="statistics_item">
+            <h3><span class="counter">1</span>k+</h3>
+            <p>Happy Customer</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="statistics_item">
+            <h3><span class="counter">1</span>k+</h3>
+            <p>Ticket Solved</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="statistics_item">
+            <h3><span class="counter">9</span>/10</h3>
+            <p>Average Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Statistics Area =================-->
+
+
+    <!--================ Start Features Area =================-->
+    <section class="services_area py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title">
+              <p class="top_text">My Services <span></span></p>
+              <h2>What Service I <br>
+                Offer For You </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s1.png' %}" alt="">
+              <h4>Backend Development</h4>
+              <p>I'm a dedicated backend developer with a passion for building scalable and efficient web applications.
+                 With expertise in programming languages like 
+                Python, JavaScript and Django, I specialize in developing robust server-side solutions that power the digital world.</p>
+              <a href="#" class="primary_btn2 mt-35">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s2.png' %}" alt="">
+              <h4>Frontend Website Design</h4>
+              <p>I'm a passionate frontend developer with a keen eye for design and a love for crafting
+                 exceptional user experiences. With a solid foundation in HTML, CSS, and JavaScript, 
+                 I bring websites to life and turn ideas into reality.</p>
+              <a href="#" class="primary_btn2 mt-35">Learn More</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="service_item">
+              <img src="{% static 'img/services/s3.png' %}" alt="">
+              <h4>Web Instructor</h4>
+              <p>I'm a passionate web instructor with a mission to empower others through technology education. With years of
+                experience in web development and teaching, I strive to make complex concepts accessible and enjoyable
+                to learners of all levels.</p></p>
+              <a href="#" class="primary_btn2 mt-35">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Features Area =================-->
+
+
+    <!--================ Start Testimonial Area =================-->
+    <section class="testimonial_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title">
+              <p class="top_text">Our Tesitmonial <span></span></p>
+              <h2>Honourable Client Says <br>
+                About Me </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="owl-carousel owl-theme testimonial-slider ">
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="testi-img mb-4 mb-lg-0">
+                  <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="testi-right">
+                  <h4>Roser Henrique</h4>
+                  <p><small>Project Manager, Apple</small></p>
+
+                  <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                  <ul class="star_rating mt-4">
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="testi-img mb-4 mb-lg-0">
+                  <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="testi-right">
+                  <h4>Roser Henrique</h4>
+                  <p><small>Project Manager, Apple</small></p>
+
+                  <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                  <ul class="star_rating mt-3">
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="testi-img mb-4 mb-lg-0">
+                  <img src="{% static 'img/testimonials/testimonial1.png' %}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="testi-right">
+                  <h4>Roser Henrique</h4>
+                  <p><small>Project Manager, Apple</small></p>
+
+                  <p>Waters can not replenish hath fly and be to brought isn't very days behold without land every above lights us fruitful wherein divide it him fowl moving may beginning subdue fly waters can't replenish hath fly and be to brought isn't very days behold </p>
+                  <ul class="star_rating mt-3">
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li><span><i class="fas fa-star"></i></span></li>
+                    <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Testimonial Area =================-->
+
+
+
+
+    <!--================ Start Portfolio Area =================-->
+    <section class="portfolio_area" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title">
+              <p class="top_text">My Portfolio <span></span></p>
+              <h2>Check My Recent <br>
+                Project</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters portfolio-filter">
+          <ul>
+            <li class="active" data-filter="*">all</li>
+            {% for ctg in portfolio_category %}
+  					<li data-filter=".{{ ctg.name }}">{{ ctg.name }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="filters-content">
+          <div class="row portfolio-grid">
+            <div class="grid-sizer col-md-3 col-lg-3"></div>
+            {% if portfolio %}
+            {% for portfolio in portfolio %}
+            <div class="col-lg-6 col-md-6 all {{ portfolio.category }}">
+  						<div class="single_portfolio">
+  							<img class="img-fluid w-100" src="{{ portfolio.photo.url }}" alt="">
+  							<div class="overlay"></div>
+  							<div class="short_info">
+  								<h4><a href="{% url 'portfolio-details' portfolio.id %}">{{ portfolio.title }}</a></h4>
+  								<p>{{ portfolio.portfolio_type }}</p>
+  							</div>
+  						</div>
+  					</div>
+            {% endfor %}
+            {% else %}
+            <h2 class="text-danger">Portfolio Not Available!</h2>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Portfolio Area =================-->
+
+    <!--================ Start Blog Area =================-->
+    <section class="blog-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title">
+              <p class="top_text">Our blog <span></span></p>
+              <h2>Latest Story From <br>
+                Our Blog </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          {% for post in post %}
+          <div class="col-lg-4 col-md-6">
+            <div class="single-blog">
+              <div class="thumb">
+                <img src="{{ post.photo.url }}" alt="post" height="310px" width="360px">
+              </div>
+              <div class="short_details">
+                <div class="meta-top d-flex">
+                  <a href="#"><i class="ti-user"></i>{{ post.author }}</a>
+                  <a href="#"><i class="ti-calendar"></i>{{ post.pub_date }}</a>
+                </div>
+                <a class="d-block" href="{% url 'blog-details' post.id %}">
+                  <h4>{{ post.title }}</h4>
+                </a>
+                <div class="text-wrap">
+                  <p>{{ post.content|safe|truncatewords:30 }}</p>
+                </div>
+                <a href="#" class="primary_btn2">Learn More</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!--================ End Blog Area =================-->
+
+    <!--================ Start Brands Area =================-->
+    <section class="brands-area section_gap_bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="owl-carousel brand-carousel">
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo1.png' %}" alt="">
+                </div>
+              </div>
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo2.png' %}" alt="">
+                </div>
+              </div>
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo3.png' %}" alt="">
+                </div>
+              </div>
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo4.png' %}" alt="">
+                </div>
+              </div>
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo5.png' %}" alt="">
+                </div>
+              </div>
+              <!-- single-brand -->
+              <div class="single-brand-item d-table">
+                <div class="d-table-cell">
+                  <img src="{% static 'img/brands/logo3.png' %}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!--================ End Brands Area =================-->
+{% endblock %}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	{% load static %}
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
+<title>Max - Home</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
+<!-- main css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+</head>
+
+<body>
+
+	
+		<header class="header_area">
+		  <div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a class="navbar-brand logo_h" href="{% url 'home' %}"><img src="{% static 'img/logo3.png' %}" alt="logo" style="width: 60%; height: 75%; " ></a>
+				<!-- a class="navbar-brand logo_inner_page" href="{% url 'home' %}"><img src="{% static 'img/logo3.png' %}" alt=""></a ---->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+				  <ul class="nav navbar-nav menu_nav">
+					<li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li>
+					<li class="nav-item submenu dropdown">
+					  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Pages</a>
+					  <ul class="dropdown-menu">
+						<li class="nav-item"><a class="nav-link" href="{% url 'service' %}">Services</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Portfolio Details</a></li>
+					  </ul>
+					</li>
+					<li class="nav-item submenu dropdown">
+					  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Blog</a>
+					  <ul class="dropdown-menu">
+						<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+					  </ul>
+					</li>
+					<li class="nav-item submenu dropdown">
+					  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Category</a>
+					  <ul class="dropdown-menu">
+						{% for ctg in post_category %}
+						<li class="nav-item"><a class="nav-link" href="{% url 'category-post' ctg.id %}">{{ ctg.name }}</a></li>
+						{% endfor %}
+					  </ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		  </div>
+		</header>
+		
+    {% block content %}
+
+    {% endblock %}
+
+		<!--================Footer Area =================-->
+		{% include 'base/footer.html' %}
+		<!--================End Footer Area =================-->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		{% include 'base/js.html' %}
+	</body>
+
+</html>
