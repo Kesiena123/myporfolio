@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'personal_portfolio.urls'
@@ -97,8 +98,6 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     #}
 #}
-
-import os
 
 
 # Load environment variables from .env file
@@ -155,10 +154,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 # static files
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+
+
 
 # media files
 MEDIA_URL = '/media/'
