@@ -26,6 +26,7 @@ SECRET_KEY = 'y5hmuk*-4*%wor)ek2up+w+x!yx8l40j*n93#1zn!p66)k=c#2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+#ALLOWED_HOSTS = ["*"]
 ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 
@@ -109,7 +110,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': os.environ.get('POSTGRES_HOST'),
-        'PORT': os.environ.get('DATABASE_PORT'),
+        'PORT': os.environ.get('POSTGRES_PORT'),
         'NAME': os.environ.get('POSTGRES_DATABASE'),
         'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
